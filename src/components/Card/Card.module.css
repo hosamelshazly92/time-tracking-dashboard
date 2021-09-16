@@ -1,0 +1,81 @@
+.container {
+  width: 272px;
+  height: 264px;
+  border-radius: 16px;
+  display: inline-block;
+  margin: 16px;
+  box-shadow: 0 2px 16px #00000014;
+  overflow: hidden;
+}
+
+.orange {
+  background-color: #ff8b64;
+}
+
+.blue {
+  background-color: #56c2e6;
+}
+
+.red {
+  background-color: #ff5e7d;
+}
+
+.green {
+  background-color: #4bcf83;
+}
+
+.purple {
+  background-color: #7235d1;
+}
+
+.yellow {
+  background-color: #f1c75b;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  height: 52px;
+  padding: 0 10%;
+}
+
+.bottom {
+  background-color: #1d204b;
+  border-radius: 16px;
+  height: 100%;
+  padding: 32px;
+  transition: all 0.2s ease-in;
+}
+
+.bottom:hover {
+  transform: translateY(-16px);
+}
+
+.sectionTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  height: 6px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  filter: sepia(1);
+}
+
+.sectionBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  font-size: 48px;
+  padding: 16px 0;
+}
+
+.secondary {
+  color: #6b71ac;
+}

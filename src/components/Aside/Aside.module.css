@@ -1,12 +1,13 @@
 .container {
-  width: 272px;
-  height: 550px;
+  height: 560px;
   background-color: #1d204b;
   border-radius: 16px;
   box-shadow: 0 2px 16px #00000014;
+  margin: 16px;
 }
 
 .top {
+  width: 272px;
   background-color: #5746ea;
   border-radius: 16px;
   display: flex;

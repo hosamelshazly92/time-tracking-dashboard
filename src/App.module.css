@@ -17,3 +17,7 @@ body {
 .container {
   display: flex;
 }
+
+.section {
+  max-width: 912px;
+}
