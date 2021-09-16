@@ -1,0 +1,44 @@
+.container {
+  width: 272px;
+  height: 550px;
+  background-color: #1d204b;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #00000014;
+}
+
+.top {
+  background-color: #5746ea;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.bottom {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 10px 0;
+  color: #6b71ac;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: #fff;
+}
