@@ -1,13 +1,45 @@
+.container {
+  width: auto;
+  position: relative;
+}
+
 .image {
   width: 96px;
   height: 96px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: 32px;
+  left: 108px;
+  white-space: nowrap;
+  background-color: #0d1323;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px #00000054;
+  transition: all 0.2s ease-in-out;
+}
+
+.hideTooltip {
+  opacity: 0;
 }
 
 @media (max-width: 1200px) {
+  .container {
+    width: 64px;
+  }
+
   .image {
     width: 64px;
     height: 64px;
+  }
+
+  .tooltip {
+    top: 76px;
+    left: -20px;
   }
 }

@@ -9,6 +9,8 @@ function App() {
   const [weekly, setWeekly] = useState(true);
   const [monthly, setMonthly] = useState(false);
 
+  // const [show, setShow] = useState(false);
+
   const user = {
     name: "Jeremy Robson",
     picture:
@@ -119,6 +121,10 @@ function App() {
     }
   };
 
+  // const handleHover = () => {
+  //   setShow(!show);
+  // };
+
   return (
     <div className={container}>
       <Aside
@@ -131,15 +137,30 @@ function App() {
       <div className={section}>
         {daily &&
           user.dailyActivities.map((card) => (
-            <Card key={card.id} data={card} />
+            <Card
+              key={card.id}
+              data={card}
+              // menuOnHover={handleHover}
+              // showState={show}
+            />
           ))}
         {weekly &&
           user.weeklyActivities.map((card) => (
-            <Card key={card.id} data={card} />
+            <Card
+              key={card.id}
+              data={card}
+              // menuOnHover={handleHover}
+              // showState={show}
+            />
           ))}
         {monthly &&
           user.monthlyActivities.map((card) => (
-            <Card key={card.id} data={card} />
+            <Card
+              key={card.id}
+              data={card}
+              // menuOnHover={handleHover}
+              // showState={show}
+            />
           ))}
       </div>
     </div>

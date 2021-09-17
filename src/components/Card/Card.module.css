@@ -80,6 +80,40 @@
   color: #6b71ac;
 }
 
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.2s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000040;
+  font-size: 12px;
+  background-color: #1d204b;
+}
+
+li {
+  color: #9095c2;
+  padding: 8px 32px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+li:hover {
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+hr {
+  border-color: #0d13232e;
+}
+
 @media (max-width: 1200px) {
   .container {
     margin: 16px 0;
