@@ -6,11 +6,18 @@ import {
   name,
   bottom,
   item,
+  highlight,
 } from "./Aside.module.css";
 
 import Avatar from "../Avatar/Avatar";
 
-const Aside = ({ data }) => {
+const Aside = ({
+  data,
+  itemOnClick,
+  highlightDaily,
+  highlightWeekly,
+  highlightMonthly,
+}) => {
   return (
     <div className={container}>
       <div className={top}>
@@ -21,9 +28,27 @@ const Aside = ({ data }) => {
         </div>
       </div>
       <div className={bottom}>
-        <p className={item}>Daily</p>
-        <p className={item}>Weekly</p>
-        <p className={item}>Monthly</p>
+        <p
+          id="daily"
+          className={`${item} ${highlightDaily ? highlight : ""}`}
+          onClick={itemOnClick}
+        >
+          Daily
+        </p>
+        <p
+          id="weekly"
+          className={`${item} ${highlightWeekly ? highlight : ""}`}
+          onClick={itemOnClick}
+        >
+          Weekly
+        </p>
+        <p
+          id="monthly"
+          className={`${item} ${highlightMonthly ? highlight : ""}`}
+          onClick={itemOnClick}
+        >
+          Monthly
+        </p>
       </div>
     </div>
   );

@@ -43,3 +43,38 @@
 .item:hover {
   color: #fff;
 }
+
+.highlight {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 16px 0;
+    height: 235px;
+  }
+
+  .top {
+    width: 343px;
+    flex-direction: row;
+  }
+
+  .section {
+    padding: 0 16px;
+  }
+
+  .label {
+    margin: 4px 0;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 4px 0;
+  }
+
+  .bottom {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}

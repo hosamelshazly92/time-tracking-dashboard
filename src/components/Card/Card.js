@@ -18,12 +18,12 @@ import {
 const Card = ({ data }) => {
   return (
     <div
-      className={`${container} ${data.type === "Work" ? orange : {}} ${
-        data.type === "Play" ? blue : {}
-      } ${data.type === "Study" ? red : {}} ${
-        data.type === "Exercise" ? green : {}
-      } ${data.type === "Social" ? purple : {}} ${
-        data.type === "Self Care" ? yellow : {}
+      className={`${container} ${data.type === "Work" ? orange : ""} ${
+        data.type === "Play" ? blue : ""
+      } ${data.type === "Study" ? red : ""} ${
+        data.type === "Exercise" ? green : ""
+      } ${data.type === "Social" ? purple : ""} ${
+        data.type === "Self Care" ? yellow : ""
       }`}
     >
       <div className={top}>

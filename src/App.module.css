@@ -6,7 +6,6 @@
 
 body {
   background-color: #0d1323;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +15,22 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
+  margin: 80px 0;
+  min-width: 1216px;
 }
 
 .section {
   max-width: 912px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    margin: 32px 0;
+    min-width: 343px;
+  }
+  .section {
+    max-width: 272px;
+  }
 }

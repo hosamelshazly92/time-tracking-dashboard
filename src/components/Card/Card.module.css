@@ -79,3 +79,21 @@
 .secondary {
   color: #6b71ac;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 16px 0;
+    width: 343px;
+    height: 200px;
+  }
+
+  .sectionBottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main {
+    font-size: 32px;
+  }
+}
